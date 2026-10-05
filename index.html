@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="GameZone - tienda de consolas y dispositivos gaming.">
+<title>GameZone | Consolas Gaming</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="#inicio">🎮 GameZone</a>
+  <nav><a href="#productos">Consolas</a><a href="#beneficios">Beneficios</a><a href="#contacto">Contacto</a></nav>
+  <button class="cart-button" id="openCart" type="button">🛒 Carrito <span id="cartCount">0</span></button>
+</header>
+
+<main>
+<section class="hero" id="inicio"><div class="hero-content">
+  <span class="tag">TIENDA GAMING</span><h1>Tu próxima consola está aquí.</h1>
+  <p>Encuentra consolas de nueva generación, portátiles y accesorios para llevar tu experiencia gaming al siguiente nivel.</p>
+  <div class="hero-actions"><a class="primary-btn" href="#productos">Ver consolas</a><button class="secondary-btn" id="heroCart" type="button">Ver carrito</button></div>
+  <div class="hero-stats"><span><b>6</b> consolas</span><span><b>Envío</b> gratis</span><span><b>Compra</b> segura</span></div>
+</div></section>
+
+<section class="section" id="productos">
+  <div class="section-heading"><div><span class="eyebrow">CATÁLOGO</span><h2>Consolas disponibles</h2></div><div class="filters" id="filters"></div></div>
+  <div id="products" class="products"><p class="loading">Cargando productos...</p></div>
+</section>
+
+<section class="benefits" id="beneficios"><div class="section benefits-inner">
+  <div class="benefit"><span>🚚</span><div><h3>Envío gratis</h3><p>En compras desde $1.500.000.</p></div></div>
+  <div class="benefit"><span>🔒</span><div><h3>Compra segura</h3><p>Formulario protegido y pedido registrado.</p></div></div>
+  <div class="benefit"><span>🎮</span><div><h3>Productos gaming</h3><p>Consolas para diferentes estilos de juego.</p></div></div>
+</div></section>
+
+<section class="section" id="contacto"><div class="contact-card"><div><span class="eyebrow">GAMEZONE</span><h2>¿Tienes dudas?</h2>
+  <p>contactanos a nuestros correo .. </p></div><a href="mailto:Gameszone@gmail.com">Gameszone@gmail.com</a></div></section>
+</main>
+
+<footer>© 2026 GameZone</footer>
+
+<!-- Carrito -->
+<div class="overlay" id="cartOverlay"><aside class="drawer" aria-label="Carrito de compras">
+  <div class="drawer-header"><div><h2>🛒 Tu carrito</h2><span id="cartSubtitle">0 productos</span></div><button class="icon-btn" id="closeCart" type="button">×</button></div>
+  <div class="free-shipping"><b>🚚 ¡Envío gratis!</b><div class="shipping-bar"><span></span></div><p>Tu pedido califica para <strong>envío gratis</strong>.</p></div>
+  <div id="cartItems" class="drawer-items"></div>
+  <div class="summary"><div><span>Subtotal</span><b id="subtotal">$0</b></div><div><span>Envío</span><b id="shipping">GRATIS</b></div><div class="total"><span>Total</span><b id="drawerTotal">$0</b></div><button id="goCheckout" class="pay-btn" type="button">Proceder al pago</button></div>
+</aside></div>
+
+<!-- Datos de compra -->
+<div class="overlay" id="purchaseOverlay"><div class="modal" role="dialog" aria-modal="true" aria-label="Datos de compra">
+  <div class="modal-header"><div><h2>📋 Datos de compra</h2><p>Completa tus datos para finalizar el pedido.</p></div><button class="icon-btn" id="closePurchase" type="button">×</button></div>
+  <div class="order-total"><span>Total del pedido</span><b id="purchaseTotal">$0</b></div>
+  <form id="checkoutForm" class="purchase-form">
+    <label>Nombre completo<input id="name" required placeholder="Ej. Nicolás Orozco"></label>
+    <label>Teléfono<input id="phone" required type="tel" placeholder="Ej. 300 123 4567"></label>
+    <label>Correo electrónico<input id="email" required type="email" placeholder="correo@email.com"></label>
+    <label>Dirección de entrega<input id="address" required placeholder="Ej. Calle 10 #20-30"></label>
+    <label>Ciudad<input id="city" required placeholder="Ej. Cúcuta"></label>
+    <label>Método de pago<select id="payment" required><option value="">Selecciona un método</option><option>Contra entrega</option><option>Transferencia bancaria</option><option>Nequi</option><option>Daviplata</option></select></label>
+    <button class="finish-btn" type="submit">Finalizar compra</button>
+  </form>
+</div></div>
+
+<div class="toast" id="toast" aria-live="polite"></div>
+<script src="js/script.js"></script>
+</body></html>

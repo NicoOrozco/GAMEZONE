@@ -1,0 +1,54 @@
+[
+  {
+    "id": "GZ-1791156511485",
+    "createdAt": "2026-10-04T23:28:31.485Z",
+    "customer": {
+      "name": "nicolas",
+      "phone": "545",
+      "email": "Nicolasjoelgarcia@gmail.com",
+      "address": "calle 8 7*21 san luis",
+      "city": "ucucuta"
+    },
+    "payment": "Nequi",
+    "items": [
+      {
+        "id": 1,
+        "name": "Xbox Series X",
+        "price": 2499000,
+        "qty": 1
+      },
+      {
+        "id": 2,
+        "name": "Xbox Series S",
+        "price": 1499000,
+        "qty": 1
+      }
+    ],
+    "subtotal": 3998000,
+    "shipping": 0,
+    "total": 3998000
+  },
+  {
+    "id": "GZ-1791159546712",
+    "createdAt": "2026-10-05T00:19:06.712Z",
+    "customer": {
+      "name": "nicolas",
+      "phone": "545",
+      "email": "Nicolasjoelgarcia@gmail.com",
+      "address": "calle 8 7*21 san luis",
+      "city": "ucucuta"
+    },
+    "payment": "Transferencia bancaria",
+    "items": [
+      {
+        "id": 3,
+        "name": "PlayStation 5",
+        "price": 2899000,
+        "qty": 1
+      }
+    ],
+    "subtotal": 2899000,
+    "shipping": 0,
+    "total": 2899000
+  }
+]

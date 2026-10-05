@@ -1,0 +1,14 @@
+{
+  "name": "gamezone-landing",
+  "version": "1.0.0",
+  "description": "Landing page de venta de consolas con frontend y backend para proyecto académico",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.24.5"
+  }
+}
